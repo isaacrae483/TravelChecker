@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name='TravelChecker'
+include ':Server'
+include ':Model'

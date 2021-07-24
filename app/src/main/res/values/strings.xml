@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TravelChecker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="latitude_label">Latitude:</string>
+    <string name="longitude_label">Longitude:</string>
+    <string name="radius_label">Radius(m):</string>
+    <string name="home_title">HOME</string>
+    <string name="work_title">WORK</string>
+    <string name="school_title">SCHOOL</string>
+    <string name="select_location_label">Select Location</string>
+    <string name="no_location_label">No Location</string>
+    <string name="submit_label">SUBMIT</string>
+</resources>

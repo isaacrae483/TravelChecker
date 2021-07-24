@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/map_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select --- Location"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="28dp"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        tools:context=".MapsActivity" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingTop="10dp"
+        android:useDefaultMargins="true"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude_label"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_location_label"
+            android:id="@+id/map_lat"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/longitude_label"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_location_label"
+            android:id="@+id/map_long"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radius_label"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/map_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24dp"/>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_button"
+            android:text="@string/submit_label"
+            android:layout_gravity="center"
+            android:layout_columnSpan="2"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24dp"/>
+
+    </GridLayout>
+
+</LinearLayout>
